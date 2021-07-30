@@ -1,0 +1,7 @@
+$primary-color: #ecf0f1;
+$primary-bg-color: #34495e;
+
+@mixin background-with-color($color: $primary-color, $background: $primary-bg-color) {
+    color: $color;
+    background-color: $background;
+}

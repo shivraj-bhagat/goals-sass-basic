@@ -1,0 +1,43 @@
+@use '../../base';
+@import '/src/examples';
+
+%center-display {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header {
+    @include background-with-color;
+    padding: 0px 30px;
+    font-size: 18px;
+}
+
+.brand {
+    @extend %center-display;
+
+    img {
+        width: 6000/200 * 1px;
+        height: auto;
+    }
+
+    .brand-text {
+        margin-left: 10px;
+        font-weight: 500;
+    }
+}
+
+.header-list {
+    @extend %center-display;
+    list-style-type: none;
+    margin-left: 50px;
+}
+
+.header-list-item {
+    padding: 15px;
+    margin-left: 10px;
+
+    &:hover {
+        @include background-with-color($primary-bg-color, $primary-color);
+    }
+}
