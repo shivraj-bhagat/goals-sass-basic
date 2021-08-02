@@ -1,0 +1,21 @@
+<div class="container">
+    <div class="main-section">
+        <div class="text-section">
+            <h3>New goal is begin, we are about to sky rocketed.</h3>
+        </div>
+        <div class="img-section">
+            <img src="/assets/img/8401.jpg" alt="img for home">
+        </div>
+    </div>
+</div>
+<div class="container service">
+    <h1>Services</h1>
+    <div class="service-section">
+        <app-card [class.active]="activateComponent" (classActivate)="Activate($event)"></app-card>
+        <app-card></app-card>
+        <app-card></app-card>
+        <app-card></app-card>
+        <app-card></app-card>
+        <app-card></app-card>
+    </div>
+</div>

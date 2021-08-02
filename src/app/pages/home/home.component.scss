@@ -1,0 +1,41 @@
+@import '/src/examples';
+
+.main-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 20px 0;
+}
+
+.text-section {
+    flex-grow: 1;
+
+    h3 {
+        @include background-with-color($primary-bg-color, #fff);
+        font-weight: 400;
+        font-size: 70px;
+    }
+}
+
+.img-section {
+    img {
+        width: 800px;
+        height: auto;
+        margin: auto;
+    }
+}
+
+.service {
+    margin-bottom: 30px;
+    h1 {
+        text-align: center;
+        margin: 20px auto;
+        @include background-with-color($primary-bg-color, #fff);
+    }
+}
+
+.service-section {
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+}

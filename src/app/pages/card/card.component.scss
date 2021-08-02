@@ -1,0 +1,28 @@
+@import '/src/examples';
+:host(.active) {
+    border: 1px solid black;
+}
+
+:host-context(.theme-light) .card{
+    background-color: #eef;
+}
+
+:host ::ng-deep p {
+    margin-top: 15px;
+    font-style: italic;
+}
+
+.card {
+    padding: 30px;
+    @include background-with-color($primary-bg-color, #fff);
+    text-align: center;
+
+    i {
+        font-size: 50px;
+        margin-bottom: 10px;
+    }
+
+    .description {
+        text-align: justify;
+    }
+}

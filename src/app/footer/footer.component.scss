@@ -1,0 +1,15 @@
+@import '/src/examples';
+
+.footer {
+    @include background-with-color;
+    text-align: center;
+
+    p {
+        padding: 15px 0;
+    }
+
+    .heart {
+        color: red;
+        font-size: 20px;
+    }
+}
